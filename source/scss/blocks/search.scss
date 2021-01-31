@@ -1,0 +1,36 @@
+.search__form {
+  position: relative;
+  width: 35.8vw;
+  margin: 0 0 0 0.72vw;
+
+  @media (max-width: $viewport_first_correction) {
+    flex-grow: 1;
+  }
+}
+
+
+.search__input {
+  width: 100%;
+  height: 48px;
+  padding-left: 10px;
+  border: 2px solid $color_border_search;
+  border-radius: 100px;
+  outline: none;
+  background-color: $bg_color_search;
+
+  @include placeholder-color-bgcolor-size-padding($color_text_fourth,$color_text_second,16px,0 0 0 8px);
+}
+
+.search__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 44px;
+  height: 45px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0px 4px;
+}

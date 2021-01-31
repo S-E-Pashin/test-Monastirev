@@ -1,0 +1,47 @@
+//Миксины
+
+@mixin wh($width, $height) {
+   width: $width;
+   height: $height;
+}
+
+@mixin flex-fd-jc-ai($flex-direction, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin font-size-lineheight-weight-align($size, $height, $weight, $align) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  text-align: $align;
+}
+
+@mixin placeholder-color-bgcolor-size-padding($color,$bgcolor,$size,$padding) {
+  &::-webkit-input-placeholder {
+    font-family: $font_global;
+    font-size: $size;
+    color: $color;
+    font-style: normal;
+    background: $bgcolor;
+    padding: $padding;
+  }
+  &:-moz-placeholder {
+    font-family: $font_global;
+    font-size: $size;
+    color: $color;
+    font-style: normal;
+    background: $bgcolor;
+    padding: $padding;
+  }
+  &:-ms-input-placeholder {
+    font-family: $font_global;
+    font-size: $size;
+    color: $color;
+    font-style: normal;
+    background: $bgcolor;
+    padding: $padding;
+  }
+}

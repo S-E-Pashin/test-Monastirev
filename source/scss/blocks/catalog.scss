@@ -1,0 +1,30 @@
+.catalog__button {
+  width: 10.83vw;
+  height: 40px;
+  @include flex-fd-jc-ai(column,center,center);
+  background-color: $bg_color_button;
+  border-radius: 10px;
+
+  @media (max-width: $viewport_first_correction) {
+    flex-grow: 0.5;
+  }
+}
+
+.catalog__button-wrapper {
+  @include flex-fd-jc-ai(row,space-between,center);
+  width: 9.04vw;
+
+  @media (max-width: $viewport_first_correction) {
+    width: 15vw;
+    flex-grow: 1;
+  }
+}
+
+.catalog__button-name {
+  @include font-size-lineheight-weight-align(20px,25.9px,700,center);
+  color: $color_text_second;
+
+  @media (max-width: $viewport_first_correction) {
+    flex-grow: 2;
+  }
+}

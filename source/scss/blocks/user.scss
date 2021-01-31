@@ -1,0 +1,56 @@
+.user {
+  @include flex-fd-jc-ai(row,space-between,center);
+  width: 12.29vw;
+
+  @media (max-width: $viewport_first_correction) {
+    flex-grow: 0.5;
+  }
+}
+
+.user__profile-favorites {
+  @include flex-fd-jc-ai(row,space-between,center);
+  width: 9.47vw;
+
+  @media (max-width: $viewport_first_correction) {
+    flex-grow: 1;
+  }
+}
+
+.user__profile-wrapper {
+  @include flex-fd-jc-ai(row-reverse,end,center);
+  width: 6.1vw;
+  background-image: url("../img/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: -1px 2px;
+
+  @media (max-width: $viewport_first_correction) {
+    flex-grow: 1;
+  }
+}
+
+.user__profile {
+  @include flex-fd-jc-ai(column,space-between,center);
+  width: 4.11vw;
+
+  @media (max-width: $viewport_first_correction) {
+    flex-grow: 1;
+  }
+}
+
+.user__name {
+  @include flex-fd-jc-ai(column,start,center);
+  @include font-size-lineheight-weight-align(16px,16px,700,center);
+  margin: 0 0 7px 0;
+  color: $color_text_first;
+}
+
+.user__signature {
+  @include flex-fd-jc-ai(column,end,center);
+  @include font-size-lineheight-weight-align(13px,10px,400,center);
+  margin: 0 2px 8px 0;
+  color: $color_text_third;
+}
+
+.user__basket {
+  padding: 0 0 3px 0;
+}

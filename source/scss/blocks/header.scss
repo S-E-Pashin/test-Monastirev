@@ -1,0 +1,24 @@
+.header {
+  width: 100%;
+  @extend %flex-column-start-center;
+  padding-top: 23px;
+}
+
+.header__wrapper {
+  width: $desktop_content;
+
+  @media (max-width: $viewport_first_correction) {
+    width: 95.6vw;
+    min-width: 320px;
+  }
+
+}
+
+.header__first-level,
+.header__second-level {
+  @include flex-fd-jc-ai(row,space-between,center);
+}
+
+.header__second-level {
+  margin: 24px 0 0 0;
+}

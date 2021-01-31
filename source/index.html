@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>монастырёв.рф</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="fonts/ptsans.woff2" rel="preload" as="font">
+  <link href="fonts/ptsansbold.woff2" rel="preload" as="font">
+</head>
+<body class="page">
+<header class="header">
+  <h1 class="header-heading visually_hidden">
+    Монастырёв - сайт где вы сможете найти всё для вашего здоровья
+  </h1>
+
+  <div class="header__wrapper">
+    <div class="header__first-level">
+      <div class="header__logo-wrapper">
+        <a class="header__logo" href="#">
+          <div class="header__logo-image-wrapper">
+            <svg class="header__logo-desktop" width="209" height="24"
+                 viewBox="0 0 209 24" aria-label="Логотип компании Монастырёв">
+              <use xlink:href="img/sprite.svg#logo-desktop"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      <nav class="main-nav">
+        <select class="main-nav__place">
+          <option>Владивосток</option>
+        </select>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a href="#"><b>Адреса аптек</b></a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Доставка</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">О нас</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Акции</a>
+          </li>
+        </ul>
+        <div class="main-nav__version">
+          <a class="main-nav__version-link" href="#">
+          <span>
+            Версия для слабовидящих
+          </span>
+            <span class="main-nav__version-icon">
+            <svg width="21" height="13" viewBox="0 0 21 13">
+              <use xlink:href="img/sprite.svg#icon-eye"></use>
+            </svg>
+          </span>
+          </a>
+        </div>
+        <address class="main-nav__tel">
+          <a class="main-nav__link" href="tel:+7(800)7077733">
+            8 800 707 77 33
+          </a>
+        </address>
+      </nav>
+    </div>
+
+    <div class="header__second-level">
+      <a href="#" class="catalog catalog__button">
+        <div class="catalog__button-wrapper">
+          <svg class="catalog__button-icon" width="17" height="15" viewBox="0 0 17 15">
+            <use xlink:href="img/sprite.svg#icon-catalog"></use>
+          </svg>
+          <span class="catalog__button-name">
+            Каталог товаров
+          </span>
+        </div>
+      </a>
+
+      <form class="search search__form">
+        <input class="search__input" type="text" placeholder="Средство,  действующее вещество, проблема">
+        <button class="search__button" type="submit"></button>
+      </form>
+
+      <section class="user">
+        <div class="user__profile-favorites">
+          <div class="user__profile-wrapper">
+            <div class="user__profile">
+              <div class="user__name">
+                Константин
+              </div>
+              <p class="user__signature">
+                Ваш профиль
+              </p>
+            </div>
+          </div>
+
+          <div class="user__favorites">
+            <svg class="user__favorites-icon" width="25" height="24" viewBox="0 0 25 24" aria-label="Избранное">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="user__basket">
+          <svg class="user__basket-icon" width="34" height="31" viewBox="0 0 34 31" aria-label="Избранное">
+            <use xlink:href="img/sprite.svg#icon-basket"></use>
+          </svg>
+        </div>
+      </section>
+    </div>
+  </div>
+</header>
+
+<section class="popup visually_hidden">
+  <div class="popup__wrapper">
+    <div class="popup__header">
+      <h3 class="popup__heading">
+        Выберите город
+      </h3>
+      <button class="popup__close" type="button">
+        <svg width="12" height="12" viewBox="0 0 12 12" aria-label="Закрыть окно выбора городов">
+          <use xlink:href="img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="popup__cities">
+      <ul class="popup__list">
+        <li class="popup__city-item">
+          <span class="popup__city popup__city-main">
+            Владивосток
+          </span>
+          <span class="popup__city-quantity">
+            12 аптек
+          </span>
+        </li>
+        <li class="popup__city-item">
+          <span class="popup__city">
+            Де-Фриз
+          </span>
+          <span class="popup__city-quantity">
+            12 аптек
+          </span>
+        </li>
+        <li class="popup__city-item">
+          <span class="popup__city">
+            Арсеньев
+          </span>
+          <span class="popup__city-quantity">
+            12 аптек
+          </span>
+        </li>
+        <li class="popup__city-item">
+          <span class="popup__city">
+            Артем
+          </span>
+          <span class="popup__city-quantity">
+            12 аптек
+          </span>
+        </li>
+        <li class="popup__city-item">
+          <span class="popup__city">
+            Большой Камень
+          </span>
+          <span class="popup__city-quantity">
+            12 аптек
+          </span>
+        </li>
+        <li class="popup__city-item">
+          <span class="popup__city">
+            Вольно-Надеждинское
+          </span>
+          <span class="popup__city-quantity">
+            12 аптек
+          </span>
+        </li>
+        <li class="popup__city-item">
+          <span class="popup__city">
+            Врангель
+          </span>
+          <span class="popup__city-quantity">
+            12 аптек
+          </span>
+        </li>
+      </ul>
+      <ul class="popup__list">
+        <li class="popup__city-item">
+          <span class="popup__city">
+            Дальнегорск
+          </span>
+          <span class="popup__city-quantity">
+            12 аптек
+          </span>
+        </li>
+        <li class="popup__city-item">
+          <span class="popup__city popup__city-main">
+            Находка
+          </span>
+          <span class="popup__city-quantity">
+            12 аптек
+          </span>
+        </li>
+        <li class="popup__city-item">
+          <span class="popup__city">
+            Сибирцево
+          </span>
+          <span class="popup__city-quantity">
+            12 аптек
+          </span>
+        </li>
+        <li class="popup__city-item">
+          <span class="popup__city">
+            Славянка
+          </span>
+          <span class="popup__city-quantity">
+            12 аптек
+          </span>
+        </li>
+        <li class="popup__city-item">
+          <span class="popup__city">
+            Спасск-Дальний
+          </span>
+          <span class="popup__city-quantity">
+            12 аптек
+          </span>
+        </li>
+        <li class="popup__city-item">
+          <span class="popup__city">
+            Уссурийск
+          </span>
+          <span class="popup__city-quantity">
+            12 аптек
+          </span>
+        </li>
+      </ul>
+      <ul class="popup__list">
+        <li class="popup__city-item">
+          <span class="popup__city popup__city-main">
+            Москва
+          </span>
+          <span class="popup__city-quantity">
+            12 аптек
+          </span>
+        </li>
+        <li class="popup__city-item">
+          <span class="popup__city popup__city-main">
+            Новосибирск
+          </span>
+          <span class="popup__city-quantity">
+            12 аптек
+          </span>
+        </li>
+        <li class="popup__city-item">
+          <span class="popup__city popup__city-main">
+            Хабаровск
+          </span>
+          <span class="popup__city-quantity">
+            12 аптек
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
